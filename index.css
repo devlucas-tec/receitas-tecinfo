@@ -53,6 +53,31 @@ header nav ul li a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    animation: trocarImagem 15s infinite;
+}
+
+@keyframes trocarImagem {
+  0%, 35% {
+    background-image: url('images/banner.png');
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  45%, 60% {
+    background-image: url('images/banner2.png');
+    opacity: 1;
+  }
+    65% {
+        opacity: 0;
+    }
+  70%, 95% {
+    background-image: url('images/banner3.png');
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .parallax p {
@@ -63,7 +88,7 @@ header nav ul li a {
     color: #fff;
     font-size: 57px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
 }
