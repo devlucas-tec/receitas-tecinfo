@@ -45,18 +45,17 @@ header nav ul li a {
 
 /* Banner Styles */
 
-.banner {
+.parallax {
+    background-image: url('images/banner.png');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    margin-bottom: 30px;
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
-    opacity: 0.9;
-}
-
-.banner p {
+.parallax p {
     position: absolute;
     top: 50%;
     left: 50%;
