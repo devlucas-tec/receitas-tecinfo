@@ -13,77 +13,96 @@ body {
 /* Header Styles */
 
 header {
-    background-color: #ffffff;
-    padding: 20px ;
-    border-bottom: 1px solid #ddd;
-}
-
-header img {
-    height: 50px;
-    margin-left: 100px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    height: 36px;
+    width: auto;
+}
+
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul li a {
+header nav ul a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
     font-size: 14px;
+    color: #555;
+    padding: 7px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
 }
+
+header nav ul a:hover {
+    background: #f4f4f4;
+    color: #1b1b1b;
+}
+
+header nav ul a.active {
+    background: #2e7d32;
+    color: #fff;
+    font-weight: 500;
+}
+
 
 /* Banner Styles */
 
-.parallax {
-    background-image: url('images/banner.png');
+.banner-container {
+    position: relative;
     height: 100vh;
+}
+
+.parallax {
+    position: absolute;
+    inset: 0; /* equivale a top/right/bottom/left: 0 */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+    z-index: 0;
+}
+
+.parallax.active {
+    opacity: 1;
+}
+
+
+.banner-content {
     position: relative;
-    animation: trocarImagem 15s infinite;
-}
-
-@keyframes trocarImagem {
-  0%, 35% {
-    background-image: url('images/banner.png');
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-  45%, 60% {
-    background-image: url('images/banner2.png');
-    opacity: 1;
-  }
-    65% {
-        opacity: 0;
-    }
-  70%, 95% {
-    background-image: url('images/banner3.png');
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.parallax p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     font-size: 57px;
     font-weight: bold;

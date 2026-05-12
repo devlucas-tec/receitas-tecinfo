@@ -1,3 +1,27 @@
+// header
+const links = document.querySelectorAll('header nav ul a');
+
+links.forEach(link => {
+    link.addEventListener('click', function () {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+
+// Parallax
+const slides = document.querySelectorAll('.parallax');
+let current = 0;
+
+function trocarImagem() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+}
+
+setInterval(trocarImagem, 5000);
+
+
 const cards = [
     {src: 'https://images.unsplash.com/photo-1605807646983-377bc5a76493?q=80&w=1024&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         titulo : 'Bolo de chocolate', 
@@ -45,3 +69,6 @@ const cardsHTML = cards.map(card => {
 }).join('');
 
 container.innerHTML = cardsHTML;
+
+
+
