@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita – Receitas</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/receita.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-logo">
+            <img src="../images/logo.png" alt="Logo das Receitas">
+        </div>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../index.html#container-cards">Receitas</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Preenchido pelo receita.js -->
+    <div id="receita-conteudo"></div>
+
+    <div id="receita-erro" style="display:none;" class="receita-erro">
+        <p>Receita não encontrada.</p>
+        <a href="../index.html#container-cards">← Voltar para as receitas</a>
+    </div>
+
+</main>
+
+<footer class="app-footer">
+    <div class="footer-content">
+        <p>&copy; 2026 - Made by Lucas Barbosa</p>
+    </div>
+</footer>
+
+<script src="../JS/dados.js"></script>
+<script src="../JS/receita.js"></script>
+
+</body>
+</html>
