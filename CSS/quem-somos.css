@@ -1,0 +1,317 @@
+/* ===========================
+   quem-somos.css
+   Layout editorial — sem cards genéricos.
+   Usa as variáveis de index.css (:root).
+=========================== */
+
+/* ---- Hero ---- */
+.qs-hero {
+    background-color: var(--primary-color);
+    color: var(--nav-link-active-color);
+    padding: 90px 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.qs-hero-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.qs-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 10px;
+}
+
+.qs-hero h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.qs-hero p {
+    font-size: 18px;
+    opacity: 0.85;
+    max-width: 560px;
+    line-height: 1.7;
+}
+
+.qs-hero-bar {
+    height: 6px;
+    background: var(--secondary-color);
+    margin-top: 0;
+}
+
+/* ---- About / Missão + Números ---- */
+.qs-about {
+    background-color: var(--background-color);
+    padding: 80px 2rem;
+}
+
+.qs-about-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 64px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.qs-about-text {
+    flex: 2;
+    min-width: 260px;
+}
+
+.qs-about-text h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.qs-about-text p {
+    font-size: 16px;
+    color: var(--card-desc-color);
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.qs-about-text strong {
+    color: var(--text-color);
+}
+
+.qs-stats {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 32px;
+}
+
+.qs-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.qs-stat-num {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.qs-stat-label {
+    font-size: 13px;
+    color: var(--card-desc-color);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* ---- Valores ---- */
+.qs-values-section {
+    background-color: var(--header-bg);
+    border-top: 1px solid var(--header-border);
+    border-bottom: 1px solid var(--header-border);
+    padding: 80px 2rem;
+}
+
+.qs-values-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.qs-values-inner h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 48px;
+}
+
+.qs-values-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.qs-value-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.qs-value-icon {
+    font-size: 28px;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.qs-value-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+
+.qs-value-item p {
+    font-size: 14px;
+    color: var(--card-desc-color);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ---- Time ---- */
+.qs-team-section {
+    background-color: var(--background-color);
+    padding: 80px 2rem;
+}
+
+.qs-team-inner {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.qs-team-inner h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.qs-team-row {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.qs-team-member {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--header-border);
+}
+
+.qs-team-member:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.qs-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--nav-link-active-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.qs-member-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.qs-role {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.qs-member-info p {
+    font-size: 15px;
+    color: var(--card-desc-color);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ---- CTA ---- */
+.qs-cta {
+    background-color: var(--primary-color);
+    padding: 80px 2rem;
+    text-align: center;
+    color: var(--nav-link-active-color);
+}
+
+.qs-cta-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.qs-cta h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.qs-cta p {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 32px;
+}
+
+.qs-cta-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--nav-link-active-color);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.qs-cta-btn:hover {
+    background-color: var(--card-btn-hover-color);
+    transform: translateY(-2px);
+}
+
+/* ---- Responsivo ---- */
+@media (max-width: 640px) {
+    .qs-about-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .qs-stats {
+        border-left: none;
+        padding-left: 0;
+        border-top: 2px solid var(--primary-color);
+        padding-top: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .qs-team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
