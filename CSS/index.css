@@ -159,7 +159,6 @@ header nav ul a.active {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    /* CORRIGIDO: transition movida para cá, para que a animação funcione na entrada e na saída do hover */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -211,7 +210,6 @@ header nav ul a.active {
     padding: 20px 0;
 }
 
-/* CORRIGIDO: adicionado estilo para .footer-content, que existia no HTML mas sem regra CSS */
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;

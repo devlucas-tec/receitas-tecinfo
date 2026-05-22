@@ -1,8 +1,7 @@
-/* ===========================
-   receita.css
+/* 
    Página individual de receita.
    Usa as variáveis de index.css (:root).
-=========================== */
+ */
 
 /* ── Hero com imagem de fundo ── */
 .receita-hero {
@@ -73,7 +72,7 @@
     backdrop-filter: blur(4px);
 }
 
-/* ── Corpo: ingredientes + preparo ── */
+/*  Corpo: ingredientes + preparo  */
 .receita-corpo {
     max-width: 1000px;
     margin: 60px auto;
