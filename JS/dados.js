@@ -209,6 +209,7 @@ const receitas = [
             'Frite até dourar, cerca de 2-3 minutos de cada lado.',
             'Retire os churros com uma escumadeira e escorra em papel toalha.',
             'Polvilhe com açúcar e canela, e sirva com doce de leite.'
+            
         ]
     }
 ];
