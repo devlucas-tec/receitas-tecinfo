@@ -156,5 +156,59 @@ const receitas = [
             'Cozinhe em fogo baixo por 20 minutos, mexendo ocasionalmente.',
             'Sirva o molho sobre o macarrão escorrido e finalize com parmesão ralado.'
         ]
+    },
+    {
+        slug: 'hamburguer-caseiro',
+        src: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=699&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        titulo: 'Hambúrguer caseiro',
+        descricao: 'Hambúrguer caseiro suculento e saboroso, perfeito para um almoço ou jantar descontraído.',
+        tempo: '30 min',
+        porcoes: '1 unidade',
+        dificuldade: 'Médio',
+        ingredientes: [
+            '150 g de carne moída',
+            '1 pão de hambúrguer',
+            '1 fatia de queijo cheddar',
+            'Folhas de alface',
+            '1 rodela de tomate',
+            '1 colher de sopa de maionese',
+            'Sal e pimenta a gosto'
+        ],
+        preparo: [
+            'Tempere a carne moída com sal e pimenta, e molde em formato de hambúrguer.',
+            'Aqueça uma frigideira em fogo médio e cozinhe o hambúrguer por 3-4 minutos de cada lado, ou até atingir o ponto desejado.',
+            'Nos últimos minutos de cozimento, coloque a fatia de queijo cheddar sobre o hambúrguer para derreter.',
+            'Toste levemente o pão na mesma frigideira.',
+            'Monte o hambúrguer: passe maionese no pão, adicione a alface, o tomate e o hambúrguer com queijo.',
+            'Sirva imediatamente.'
+        ]
+    },
+    {
+        slug: 'churros',
+        src: 'https://images.unsplash.com/photo-1624371414361-e670edf4898d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        titulo: 'Churros',
+        descricao: 'Churros crocantes por fora e macios por dentro, perfeitos para um lanche ou sobremesa deliciosa.',
+        tempo: '25 min',
+        porcoes: '10 unidades',
+        dificuldade: 'Médio',
+        ingredientes: [
+            '1 xícara de água',
+            '2 colheres de sopa de açúcar',
+            '1/2 colher de chá de sal',
+            '2 colheres de sopa de óleo',
+            '1 xícara de farinha de trigo',
+            'Óleo para fritar',
+            'Açúcar e canela para polvilhar',
+            'Doce de leite para acompanhar'
+        ],
+        preparo: [
+            'Em uma panela, misture a água, o açúcar, o sal e o óleo. Leve ao fogo até ferver.',
+            'Retire do fogo e adicione a farinha de trigo de uma só vez, mexendo vigorosamente até formar uma massa homogênea.',
+            'Deixe a massa esfriar por alguns minutos.',
+            'Coloque a massa em um saco de confeitar com bico estrela e forme os churros diretamente no óleo quente (180 °C).',
+            'Frite até dourar, cerca de 2-3 minutos de cada lado.',
+            'Retire os churros com uma escumadeira e escorra em papel toalha.',
+            'Polvilhe com açúcar e canela, e sirva com doce de leite.'
+        ]
     }
 ];
