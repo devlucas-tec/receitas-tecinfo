@@ -111,10 +111,42 @@
                     <div class="qs-avatar">LB</div>
                     <div class="qs-member-info">
                         <h3>Lucas Barbosa</h3>
-                        <span class="qs-role">Fundador & Chef Entusiasta</span>
-                        <p>Apaixonado por cozinha desde criança, Lucas transforma receitas de família em experiências acessíveis para todos.</p>
+                        <span class="qs-role">Fundador & Desenvolvedor dessa Aplicação</span>
+                        <p>APlicação web simples desenvolvida na disciplina de HTML e CSS no Tecinfo, <br>
+                            Alô Professor Winnicius, desenrola meu 10 KKK</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="qs-contact-section">
+        <div class="qs-contact-inner">
+            <h2>Entre em contato</h2>
+            <p>Tem uma receita para compartilhar, uma sugestão ou só quer dizer oi? Manda uma mensagem!</p>
+
+            <div class="qs-contact-form">
+                <div class="qs-form-row">
+                    <div class="qs-form-group">
+                        <label for="contact-name">Nome</label>
+                        <input type="text" id="contact-name" placeholder="Seu nome">
+                    </div>
+                    <div class="qs-form-group">
+                        <label for="contact-email">E-mail</label>
+                        <input type="email" id="contact-email" placeholder="seu@email.com">
+                    </div>
+                </div>
+                <div class="qs-form-group">
+                    <label for="contact-subject">Assunto</label>
+                    <input type="text" id="contact-subject" placeholder="Do que se trata?">
+                </div>
+                <div class="qs-form-group">
+                    <label for="contact-message">Mensagem</label>
+                    <textarea id="contact-message" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button class="qs-contact-btn" onclick="enviarContato()">Enviar mensagem</button>
+                <p class="qs-contact-feedback" id="contact-feedback"></p>
             </div>
         </div>
     </section>

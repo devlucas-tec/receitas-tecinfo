@@ -1,5 +1,3 @@
-// ── receita.js — renderiza a página de uma receita pelo slug da URL ───────────
-
 // Marca "Receitas" como active no nav
 const navLinks = document.querySelectorAll('header nav ul a');
 navLinks.forEach(link => link.classList.remove('active'));

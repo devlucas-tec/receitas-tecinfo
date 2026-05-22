@@ -1,10 +1,9 @@
-/* ===========================
-   quem-somos.css
+/* 
    Layout editorial — sem cards genéricos.
    Usa as variáveis de index.css (:root).
-=========================== */
+ */
 
-/* ---- Hero ---- */
+/*  Hero  */
 .qs-hero {
     background-color: var(--primary-color);
     color: var(--nav-link-active-color);
@@ -52,7 +51,7 @@
     margin-top: 0;
 }
 
-/* ---- About / Missão + Números ---- */
+/*  About / Missão + Números  */
 .qs-about {
     background-color: var(--background-color);
     padding: 80px 2rem;
@@ -121,7 +120,7 @@
     letter-spacing: 0.08em;
 }
 
-/* ---- Valores ---- */
+/*  Valores  */
 .qs-values-section {
     background-color: var(--header-bg);
     border-top: 1px solid var(--header-border);
@@ -250,7 +249,7 @@
     margin: 0;
 }
 
-/* ---- CTA ---- */
+/*  CTA  */
 .qs-cta {
     background-color: var(--primary-color);
     padding: 80px 2rem;
@@ -292,7 +291,101 @@
     transform: translateY(-2px);
 }
 
-/* ---- Responsivo ---- */
+/*  Contato  */
+.qs-contact-section {
+    padding: 80px 2rem;
+    background-color: var(--bg-color, #f9f9f9);
+}
+
+.qs-contact-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.qs-contact-inner h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.qs-contact-inner > p {
+    font-size: 16px;
+    color: var(--card-desc-color);
+    margin-bottom: 36px;
+    line-height: 1.7;
+}
+
+.qs-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.qs-form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.qs-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.qs-form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.qs-form-group input,
+.qs-form-group textarea {
+    padding: 12px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.25s ease;
+    resize: vertical;
+}
+
+.qs-form-group input:focus,
+.qs-form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.qs-contact-btn {
+    align-self: flex-start;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.qs-contact-btn:hover {
+    background-color: var(--card-btn-hover-color, #e5533d);
+    transform: translateY(-2px);
+}
+
+.qs-contact-feedback {
+    font-size: 14px;
+    color: var(--primary-color);
+    min-height: 20px;
+}
+
+/*  Responsivo  */
 @media (max-width: 640px) {
     .qs-about-inner {
         flex-direction: column;
