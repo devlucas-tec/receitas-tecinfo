@@ -1,4 +1,4 @@
-// Header: active baseado na seção visível (scroll) ─────────────────────────
+// Header: active baseado na seção visível (scroll) 
 const links = document.querySelectorAll('header nav ul a');
 
 function atualizarActive() {
@@ -11,7 +11,7 @@ function atualizarActive() {
         const linkReceitas = document.querySelector('header nav ul a[href="#container-cards"]');
         if (linkReceitas) linkReceitas.classList.add('active');
     } else {
-        const linkInicio = document.querySelector('header nav ul a[href="index.html"]');
+        const linkInicio = document.querySelector('header nav ul a[href="#"]');
         if (linkInicio) linkInicio.classList.add('active');
     }
 }
@@ -26,7 +26,7 @@ links.forEach(link => {
 });
 
 
-// Parallax: troca o banner a cada 5s ───────────────────────────────────────
+// Parallax: troca o banner a cada 5s 
 const slides = document.querySelectorAll('.parallax');
 let current = 0;
 
@@ -39,7 +39,7 @@ function trocarImagem() {
 setInterval(trocarImagem, 5000);
 
 
-// Cards: renderiza a partir de dados.js ─────────────────────────────────────
+// Cards: renderiza a partir de dados.js 
 const container = document.querySelector('.container-cards');
 
 const cardsHTML = receitas.map((receita) => `
