@@ -28,6 +28,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--background-color);
